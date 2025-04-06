@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Product Review Aggregator & AI Chatbot</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Roboto+Mono:wght@300;600&display=swap" rel="stylesheet"/>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+  <header class="bg-gray-800 py-6 shadow-lg text-center">
+    <h1 class="text-3xl font-bold">🛒 Product Review Aggregator & AI Chatbot</h1>
+    <p class="text-sm text-gray-300 mt-1">Get insights from product reviews</p>
+  </header>
+
+  <main class="max-w-2xl mx-auto mt-10 p-6 bg-gray-800 rounded-lg shadow-md">
+    <h2 class="text-xl font-semibold text-gray-200 mb-4">💬 Ask the Chatbot</h2>
+
+    <input type="text" id="userInput" placeholder="Ask about product reviews..." class="w-full p-3 rounded border border-gray-600 bg-gray-700 text-white focus:ring-2 focus:ring-blue-500"/>
+
+    <button onclick="getChatbotResponse()" class="mt-3 w-full bg-blue-600 hover:bg-blue-700 py-2 rounded text-white font-medium">
+      ➤ Ask
+    </button>
+
+    <div id="chatbotResponse" class="mt-4 p-4 bg-gray-700 rounded min-h-[60px]"></div>
+
+    <section class="mt-6">
+      <h3 class="text-lg font-semibold mb-2">🔹 Common Product Review Questions:</h3>
+      <div class="grid grid-cols-2 gap-2">
+        <button onclick="fillQuestion(this)" class="faq-btn">What are the best rated laptops?</button>
+        <button onclick="fillQuestion(this)" class="faq-btn">Compare reviews for iPhone vs Android.</button>
+        <button onclick="fillQuestion(this)" class="faq-btn">Are there any common issues with this product?</button>
+        <button onclick="fillQuestion(this)" class="faq-btn">What do users say about battery life?</button>
+        <button onclick="fillQuestion(this)" class="faq-btn">Is this product worth the price?</button>
+        <button onclick="fillQuestion(this)" class="faq-btn">What are the top features mentioned in reviews?</button>
+      </div>
+    </section>
+
+    <section class="mt-10">
+      <h3 class="text-lg font-semibold mb-4">🔗 Connect with Product Reviewers:</h3>
+      <ul class="space-y-3">
+        <li>
+          <a href="https://www.youtube.com/user/MKBHD" target="_blank" class="text-blue-400 hover:underline">
+            🎥 Marques Brownlee (MKBHD) - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.youtube.com/user/UnboxTherapy" target="_blank" class="text-blue-400 hover:underline">
+            📦 Unbox Therapy - YouTube
+          </a>
+        </li>
+        <li>
+          <a href="https://www.cnet.com/" target="_blank" class="text-blue-400 hover:underline">
+            💻 CNET Reviews - Website
+          </a>
+        </li>
+        <li>
+          <a href="https://www.techradar.com/" target="_blank" class="text-blue-400 hover:underline">
+            📱 TechRadar Reviews - Website
+          </a>
+        </li>
+        <li>
+          <a href="https://www.pcmag.com/" target="_blank" class="text-blue-400 hover:underline">
+            🖥️ PCMag Reviews - Website
+          </a>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="text-center text-gray-400 text-sm py-6 mt-10 bg-gray-800">
+    © 2025 Product Review Aggregator & Chatbot — Made by Ashutosh Yadav
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
